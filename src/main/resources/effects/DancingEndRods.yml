@@ -1,0 +1,49 @@
+# This is a list of where this effect exists in the world
+instances:
+  # Here, "Spawn" is the name you use in game for the effect at 0,100,0,world
+  Spawn:
+    location: '0,100,0,world' # You must specify the location. These can also be made in game.
+    enabled: false # You can also change this in game, or tweak it here from the config
+
+# These sections aren't needed, but they can be useful if you want to share your creations
+created_by: 'Weber588'
+description: 'A ring of end rods that spin and move around in a circle, drawing patterns above'
+
+# This is the list of effects to draw around the location specified in each instance
+effects:
+  '1':
+    type: 'ring'
+    particle: 'end_rod'
+    amount: 7
+    force: false
+
+    offset:
+      x: 0
+      y: 0
+      z: 0
+    interval: 1
+
+    rotation:
+      cycle:
+        start: 0
+        end: 360
+        period: 500
+
+    direction:
+      x: 0
+      y: 1
+      z: 0
+
+    speed: 0.88
+    variation: 0
+
+    about:
+      x: 0
+      y: 1
+      z: 0
+
+    radius:
+      pulse:
+        min: 4
+        max: 7
+        period: 75

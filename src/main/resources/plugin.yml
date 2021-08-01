@@ -1,0 +1,11 @@
+main: wbs.particleeffects.WbsParticleEffects
+name: WbsParticleEffects
+version: 0.1.0
+api-version: 1.13
+author: Weber588
+description: Persistent particle effects using the WbsUtils particle API
+depend: [WbsUtils]
+commands:
+  particleeffect:
+    aliases: [wbspe, pe]
+    description: Interact with persistent particle effects & associated configs.
